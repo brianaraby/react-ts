@@ -1,0 +1,35 @@
+{
+  "name": "react-plus-webpack",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack serve --config webpack.config.ts --mode development",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.ts --mode production",
+    "start": "npx serve -s build -l 5050",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/minimatch": "^6.0.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^10.1.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.4",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.4",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.4",
+    "webpack": "^5.102.1"
+  }
+}
